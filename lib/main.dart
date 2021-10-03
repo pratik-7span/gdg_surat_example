@@ -82,12 +82,14 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text('Hello from GDG Surat'),
-            Container(
-              width: 100,
-              height: 100,
-              color: Colors.red,
-            )
+            Align(
+              alignment: AlignmentDirectional.centerStart,
+              child: Text('I am aligned at start'),
+            ),
+            Align(
+              alignment: AlignmentDirectional.centerEnd,
+              child: Container(height: 20,width:50,color:Colors.amber),
+            ),
           ],
         ),
       ),
